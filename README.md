@@ -11,4 +11,4 @@ A Web App with an automated GIS classification system underpinned by Region-base
 * Finished Navigation Bar Design
 
 ## Important Links
-* Design Specs: https://github.com/rendznicoy/golden-eagle)https://github.com/rendznicoy/golden-eagle
+* Design Specs: https://github.com/rendznicoy/golden-eagle
