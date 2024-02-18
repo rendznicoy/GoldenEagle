@@ -5,6 +5,12 @@ A Web App with an automated GIS classification system underpinned by Region-base
 | Internal Release Code | Version      | Date Released |
 |----------|------------|-------------------|
 | GE.000.001     | v1.0.0       | 2024-02-05 19:00:00              |
+| GE.000.002     | v1.0.1       | 2024-02-19 01:00:00              |
+
+## GE.000.002 Release Notes
+* Sign Up UI finished
+* Homepage UI finished
+* Established folder for backend design
 
 ## GE.000.001 Release Notes
 * Initial Commit
