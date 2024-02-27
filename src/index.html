@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <img
+          class="main-image"
+          src="images/Logo-transparent.png"
+          alt="app logo"
+        />
+      </div>
+      <div class="bottom">
+        <button class="home no-border" id="homeButton">Home</button>
+        <div class="right-most">
+          <button class="login no-border" id="loginButton">Login</button>
+          <button
+            class="sign-up"
+            id="signUpButton"
+            onclick="redirectToSignup()"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper right">
+        <div class="welcome-prompt">
+          <h2>WELCOME TO GIEASE</h2>
+          <p>
+            Classify the land type of aerial views of images with our
+            user-friendly automated land type classification system for
+            streamlined and accurate geospatial insights
+          </p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <input type="file" id="fileInput" style="display: none" />
+        <button class="choose-file" id="chooseFile" onclick="openFileDialog()">
+          <img src="images/upload.png" alt="upload button" />Choose file
+        </button>
+      </div>
+    </main>
+    <footer>
+      <h1>Tim eroy</h1>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
