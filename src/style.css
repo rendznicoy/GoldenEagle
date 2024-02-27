@@ -5,6 +5,7 @@
     --fw-above-normal: 550;
     --fw-bold: 600;
 
+    --fs-200: 0.75rem;
     --fs-400: 0.9375rem;
     --fs-500: 1.25rem;
     --fs-600: 1.625rem;
@@ -14,12 +15,15 @@
     --clr-primary-700: #396c31;
     --clr-primary-500: #497000;
     --clr-primary-400: #579c4c;
+    --clr-primary-300: #65b741;
     --clr-primary-100: #d1dbbf;
+    
 
 
     --clr-white: #fefeff;
     --clr-red: #c74545;
     --clr-dark-red: #bd060a;
+    --clr-yellow: #b9b04f;
 }
 
 *,
@@ -176,3 +180,136 @@ footer {
     height: 10vh;
 }
 
+.signup-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(var(--clr-primary-400), var(--clr-yellow));
+
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(to right,var(--clr-primary-700), var(--clr-primary-400));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.signup-wrapper > .right > h2 {
+    color: black;
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-900);
+}
+
+.input-group {
+    position: relative;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.signup-wrapper > .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.signup-wrapper > .right > .input-group > input {
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid black;
+    padding-block: 6px;
+}
+
+.input-group > label[for=emailInput] {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: .875rem;
+    transition: all .3s ease;
+}
+
+:is(.input-group):has(input:focus-visible) label[for=emailInput],  :is(.input-group):has(input:not(:placeholder-shown)) + label[for=emailInput]{
+    top: 2px;
+    left: 14px;
+    font-size: .6rem;
+    background: white;
+}
+
+.input-group > label[for=passwordInput] {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: .875rem;
+    transition: all .3s ease;
+}
+
+:is(.input-group):has(input:focus-visible) label[for=passwordInput], :is(.input-group):has(input:not(:placeholder-shown)) + label[for=passwordInput]{
+    top: 2px;
+    left: 14px;
+    font-size: .6rem;
+    background: var(--clr-white);
+}
+
+.input-group > label[for=confirmPasswordInput] {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: .875rem;
+    transition: all .3s ease;
+}
+
+:is(.input-group):has(input:focus-visible) label[for=confirmPasswordInput], :is(.input-group):has(input:not(:placeholder-shown)) + label[for=confirmPasswordInput] {
+    top: 2px;
+    left: 14px;
+    font-size: .6rem;
+    background: var(--clr-white);
+}
+
+
+.create-account {
+    background-color:var(--clr-primary-300);
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-white);
+    min-width: 168px;
+    min-height: 30px;    
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-400);
+}
+
+.create-account:hover {
+    cursor: pointer;    
+    background-color:var(--clr-primary-400);
+}
+
+.signup-wrapper > .right > p {
+    color: black;
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-200);
+
+}

@@ -9,21 +9,46 @@
   <body>
     <div class="signup-wrapper">
       <div class="left">
-        <header>
+        <div class="header">
           <div class="top">
             <img
-              src="images/Logo-transparent.png"
+              src="../images/Logo-transparent.png"
               alt="app logo"
               class="main-image"
             />
           </div>
-        </header>
-        <main>
-          <div class="left"></div>
-          <div class="right"></div>
-        </main>
+        </div>
+        <div class="left">
+          <img src="../images/map.png" alt="" />
+        </div>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <h2>Create Account</h2>
+        <div class="input-group">
+          <label for="emailInput"
+            >Email <span style="color: red">*</span></label
+          >
+          <input type="text" id="emailInput" />
+        </div>
+        <div class="input-group">
+          <label for="passwordInput"
+            >Password <span style="color: red">*</span></label
+          >
+          <input type="text" id="passwordInput" />
+        </div>
+        <div class="input-group">
+          <label for="confirmPasswordInput"
+            >Confirm Password <span style="color: red">*</span></label
+          >
+          <input type="text" id="confirmPasswordInput" />
+        </div>
+        <div class="input-group">
+          <button class="create-account" id="createButton">
+            Create Account
+          </button>
+        </div>
+        <p>Already have an account? <a href="">Login</a></p>
+      </div>
     </div>
   </body>
 </html>
