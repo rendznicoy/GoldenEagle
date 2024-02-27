@@ -232,3 +232,16 @@ nav ul {
 .ico--hamburger {
     background-position: -55px -5px;
 }
+.grid-layout {
+    display: grid;
+}
+
+.grid-layout > * {
+    flex: 1;
+}
+
+.col {
+    display: grid;
+    align-content: center;
+    gap: 2rem;
+}
