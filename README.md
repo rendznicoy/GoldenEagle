@@ -11,7 +11,7 @@ A Web App with an automated GIS classification system underpinned by Region-base
 ## GE.001.003 Release Notes
 * Login UI finished
 * Login Page finished
-* Upload Feature functionable
+* Upload Feature UI finished
 
 ## GE.001.002 Release Notes
 * Sign Up UI finished
