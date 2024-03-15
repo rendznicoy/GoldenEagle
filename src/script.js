@@ -4,9 +4,22 @@ function redirectToSignup() {
 
     // Redirect to the signup page
     window.location.href = signupPageUrl;
-    console.log("Tim eroy");
+    console.log("Sucessfuly redirected to signup page");
   }
 
+function redirectToHome() {
+    var signupPageUrl = "index.html";
+
+    window.location.href = signupPageUrl;
+    console.log("Suceessfuly redirected to home page");
+  }
+
+function redirectToLogin() {
+    var signupPageUrl = "login.html";
+
+    window.location.href = signupPageUrl;
+    console.log("Suceessfuly redirected to login page");
+  }
 
 
 //Open file dialog

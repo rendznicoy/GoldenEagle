@@ -3,23 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GIEASE | Home</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="/images/logo-ico.png" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <div class="top">
+      <a class="top" href="/src/index.html">
         <img
           class="main-image"
           src="/images/Logo-transparent.png"
           alt="app logo"
         />
+        </a>
       </div>
       <div class="bottom">
-        <button class="home no-border" id="homeButton">Home</button>
+        <button 
+            class="home no-border" 
+            id="homeButton"
+            onclick="redirectToHome()"
+            >
+              Home
+            </button>
         <div class="right-most">
-          <button class="login no-border" id="loginButton">Login</button>
+          <button 
+            class="login no-border" 
+            id="loginButton"
+            onclick="redirectToLogin()"
+            >
+              Login
+            </button>
           <button
             class="sign-up"
             id="signUpButton"
@@ -49,7 +62,8 @@
       </div>
     </main>
     <footer>
-      <h1>Team Air Oil</h1>
+      COMPANY
+      <ul class="footer main"></ul>
     </footer>
     <script src="script.js"></script>
   </body>
