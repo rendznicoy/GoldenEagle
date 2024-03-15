@@ -177,10 +177,15 @@ main {
 }
 
 footer {
-    height: 10vh;
-    justify-content: center;
-    align-items: center;
+    height: 20vh;
     text-align: center;
+    font-size: 18px;
+    line-height: 5px;
+    font-weight: 600;
+    color: var(--clr-primary-500);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    margin-top: 25px;
 }
 
 .signup-wrapper {
@@ -315,4 +320,110 @@ footer {
     font-weight: var(--fw-normal);
     font-size: var(--fs-200);
 
+}
+
+ul {
+    list-style: none;
+}
+
+ a {
+    cursor: pointer;
+    background: rgba (0,0,0,0);
+ }
+
+.footer_main li {
+    margin-bottom: 12px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.footer_main li a {
+    color: #47474f;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer_main li a:hover {
+    color: var(--clr-primary-600);
+}
+
+.col {
+    flex: 0 0 66.67%;
+    max-width: 72.67%;
+}
+
+.footer_mainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_mainer .slogan {
+    margin-right: 16px;
+}
+
+.slogan p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.separator {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.social .social_item {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+    opacity: .7;
+    display: inline-block;
+    margin-left: 8px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);    
+}
+
+.social .social_item a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--clr-primary-500);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+}
+
+.twttr {
+    background-image: url(/images/twitter.png);
+}
+
+.fb {
+    background-image: url(/images/facebook.png);
+}
+
+.lnkd {
+    background-image: url(/images/linkedin.png);
+}
+
+.nstgrm {
+    background-image: url(/images/instagram.png);
+}
+
+.tk {
+    background-image: url(/images/tiktok.png);
+}
+
+.social_item:hover {
+    opacity: 2.5;
 }
