@@ -21,9 +21,34 @@ function redirectToLogin() {
     console.log("Suceessfuly redirected to login page");
   }
 
+function redirectToDownload() {
+    var signupPageUrl = "download.html";
+
+    window.location.href = signupPageUrl;
+    console.log("Suceessfuly redirected to download page");
+  }
+
 
 //Open file dialog
 function openFileDialog() {
+  // Trigger the click event on the hidden file input
+  document.getElementById('fileInput').click();
+}
+document.getElementById('fileInput').addEventListener('change', handleFileSelection);
+
+function handleFileSelection() {
+  // Access the selected file(s) using the files property
+  const selectedFile = document.getElementById('fileInput').files[0];
+  
+  if (!selectedFile) {
+      console.log('No file selected.');
+      return;
+  }
+  console.log('Selected file:', selectedFile.name);
+}
+
+// Save file dialog
+function saveFileDialog() {
   // Trigger the click event on the hidden file input
   document.getElementById('fileInput').click();
 }
