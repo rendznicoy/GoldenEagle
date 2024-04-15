@@ -269,6 +269,21 @@ footer {
     background: white;
 }
 
+.email-input {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    font-size: .875rem;
+    transition: all .3s ease;
+}
+
+.password-input {
+    top: 2px;
+    left: 14px;
+    font-size: .6rem;
+    background: var(--clr-white);
+}
+
 .input-group > label[for=passwordInput] {
     position: absolute;
     top: 12px;
