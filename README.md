@@ -10,7 +10,7 @@ A Web App with an automated GIS classification system underpinned by Region-base
 | GE.011.001     | v1.1.0       | 2024-04-16 13:00:00              |
 
 ## GE.011.001 Release Notes (reverse chronological order)
-* Sign Up Logic Implemented
+* Deployed on a test server
 
 ## GE.010.004 Release Notes (reverse chronological order)
 * Major design changes for all features
